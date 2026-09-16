@@ -1,53 +1,42 @@
 # 와이즈코딩 울산 러닝센터 홈페이지
 
-기존에 만든 홈페이지를 GitHub에 올릴 수 있도록 구성한 정적 웹사이트입니다.
-별도 설치나 빌드 없이 사용할 수 있습니다.
+주소: 울산광역시 남구 문수로 433, 4층
+전화: 070-7123-9066
 
-## 파일 구성
+HTML, CSS, JavaScript로 구성되어 별도 설치나 빌드 없이 사용할 수 있습니다.
+학원 소개, 커리큘럼, 수상실적, 전화 상담, 네이버 지도 연결이 포함되어 있습니다.
 
-- index.html: 홈페이지 내용과 전화번호
-- style.css: 디자인과 모바일 화면 설정
-- robot.png: 로봇 콘셉트 이미지 (실제 학원 로봇 사진이 아닌 AI 생성 이미지)
-- .nojekyll: GitHub Pages에서 정적 파일을 그대로 제공하기 위한 설정
-- README.md: 업로드 및 수정 안내
+## GitHub에 올리기
 
-## GitHub에 파일 올리기
+1. ZIP 파일을 압축 해제합니다.
+2. GitHub에 로그인하고 새 저장소(Repository)를 만듭니다. 예: wisecoding-ulsan
+3. 무료 계정에서 GitHub Pages를 이용하려면 Public 저장소로 만듭니다. 업로드한 소스와 홈페이지는 공개됩니다.
+4. 저장소의 파일 업로드 기능(Add file → Upload files, 빈 저장소에서는 uploading an existing file)을 선택합니다.
+5. 압축을 푼 파일을 모두 올리고 Commit changes로 저장합니다. ZIP 자체를 올리는 것이 아닙니다.
+6. 저장소 첫 화면에 index.html이 바로 보이도록 올리세요. 상위 폴더 전체를 올려 index.html이 하위 폴더에 들어가지 않도록 합니다.
 
-1. ZIP 파일을 다운로드한 후 압축을 풉니다.
-2. GitHub에 로그인하고 새 저장소를 만듭니다. 이름 예: wisecoding-ulsan
-3. GitHub Free를 사용하는 경우 GitHub Pages용 저장소는 Public으로 만듭니다.
-4. 저장소의 파일 업로드 화면에서 압축을 푼 파일들을 올립니다. ZIP 자체를 올리는 것이 아닙니다.
-5. index.html, style.css, robot.png가 저장소 최상위에 나란히 있어야 합니다.
-6. Commit changes로 저장합니다.
+## 홈페이지 공개하기
 
-## 홈페이지 주소 만들기 (GitHub Pages)
+1. 저장소의 Settings → Pages를 엽니다.
+2. Build and deployment의 Source에서 Deploy from a branch를 선택합니다.
+3. Branch에서 main, 폴더에서 /(root)를 선택하고 Save를 누릅니다.
+4. 배포가 완료되면 Pages 화면에 표시되는 홈페이지 주소를 엽니다.
+   일반적인 주소: https://깃허브아이디.github.io/저장소이름/
+5. 배포 상태는 저장소 Actions 메뉴에서 확인할 수 있습니다.
 
-1. 저장소에서 Settings → Pages를 엽니다.
-2. Build and deployment의 Source를 Deploy from a branch로 선택합니다.
-3. Branch를 main, 폴더를 / (root)로 선택하고 Save를 누릅니다.
-   기본 브랜치 이름이 다르면 파일을 올린 브랜치를 선택합니다.
-4. 배포 완료 후 Pages 화면에 표시되는 홈페이지 주소를 엽니다.
-   일반적인 프로젝트 주소: https://사용자이름.github.io/저장소이름/
+공식 안내: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
 
-GitHub Pages로 게시하면 방문자가 볼 수 있는 공개 홈페이지가 됩니다.
-현재 ChatGPT에서 확인하는 사이트의 비공개 설정은 이 파일에 포함되지 않습니다.
+## 파일 안내
 
-## 내 컴퓨터에서 확인하기
+- index.html: 홈페이지 내용과 주소·전화번호
+- style.css: 색상, 배치, 모바일 화면 디자인
+- script.js: 모바일 메뉴 동작
+- robot.png: 휴머노이드 로봇 콘셉트 이미지
+- README.md: 이 안내문
 
-압축을 푼 폴더의 index.html을 브라우저로 열면 됩니다.
-Google Fonts 글꼴은 인터넷 연결이 있을 때 불러옵니다.
-연결이 없으면 기기의 기본 글꼴로 표시됩니다.
+## 수정 및 미리 보기
 
-## 내용 수정하기
-
-- 문구·수상 내역·학원 소개: index.html 수정
-- 상담 전화번호: 화면의 070-7123-9066과 tel:07071239066을 함께 수정
-- 색상·글자 크기·레이아웃: style.css 수정
-- 로봇 사진: robot.png를 같은 이름의 사진으로 교체하고 index.html의 이미지 설명과 콘셉트 이미지 표기도 수정
-
-학원 주소는 아직 포함되지 않았습니다. 실제 주소와 수업 사진을 추가할 수 있습니다.
-업로드 후 변경 사항을 커밋하면 GitHub Pages에 반영됩니다.
-
-## 공식 안내
-
-https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+압축 해제 후 index.html을 더블 클릭하면 기본 화면을 볼 수 있습니다.
+내용과 연락처는 index.html에서 수정합니다. 이미지 교체 시 robot.png라는 이름을 유지하면 됩니다.
+구글 웹폰트는 인터넷 연결 시 불러오며, 연결되지 않으면 기본 글꼴로 표시됩니다.
+이 파일 묶음에는 서버나 관리자 게시판이 없으며, 내용 수정은 파일을 편집한 뒤 다시 업로드하는 방식입니다.
