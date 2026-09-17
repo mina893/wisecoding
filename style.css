@@ -27,3 +27,12 @@ body.notice-visible{overflow:hidden}
 .notice-actions label{display:flex;align-items:center;gap:8px;font-size:14px;cursor:pointer}.notice-actions input{width:18px;height:18px;accent-color:var(--orange)}
 .notice-actions button{background:var(--orange);color:#fff;border:0;border-radius:6px;padding:10px 24px;font:inherit;font-size:14px;font-weight:700;cursor:pointer}
 @media(max-width:720px){#notice-open{text-align:left;padding:10px;font-size:15px}.notice-heading{padding:10px 16px}.notice-body{padding:20px}.notice-body h2{font-size:22px}.notice-actions{padding:14px 20px}}
+
+nav{gap:20px;flex-wrap:wrap;align-items:center}nav>a{white-space:nowrap}.channel-status{font-size:12px;font-weight:400;color:#657187;margin-left:3px}nav a[aria-disabled="true"]{color:#657187;cursor:default}header{flex-wrap:wrap}@media(min-width:721px) and (max-width:1150px){header{gap:15px}header nav{width:100%;justify-content:center;order:3;gap:24px}}@media(max-width:720px){nav{gap:0}nav>a{white-space:normal}}
+
+/* Use the supplied official logo without altering its artwork. */
+header .brand,footer .brand{display:flex;flex-direction:column;align-items:flex-start;gap:2px;flex-shrink:0;line-height:1.3}
+.brand-logo{display:block;width:300px;max-width:100%;height:auto;object-fit:contain}
+.brand-location{display:block;align-self:flex-end;color:#455650;font-size:14px;font-weight:600;letter-spacing:1px;margin-right:10px}
+footer .brand-logo{width:260px}footer .brand-location{font-size:13px}
+@media(max-width:720px){header .brand-logo{width:clamp(190px,57vw,280px)}.brand-location{font-size:13px;letter-spacing:.6px;margin-right:6px}header{column-gap:10px}footer .brand-logo{width:260px}}
