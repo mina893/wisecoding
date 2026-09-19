@@ -146,3 +146,22 @@ img,model-viewer{max-width:100%}
 .ac-blue{color:#2458d8;background:linear-gradient(145deg,#fff 58%,#eef4ff)}.ac-gold{color:#d69a12;background:linear-gradient(145deg,#fff 58%,#fff8e8)}.ac-orange{color:#e76e27;background:linear-gradient(145deg,#fff 58%,#fff2ea)}.ac-navy{color:#34445c;background:linear-gradient(145deg,#fff 58%,#eef2f7)}
 @media(max-width:900px){.achievement-cards{grid-template-columns:1fr 1fr}}
 @media(max-width:720px){.achievement-cards{grid-template-columns:1fr;gap:16px}.achievement-card{min-height:0;padding:22px;border-radius:16px}.ac-year{font-size:25px}.achievement-card strong{font-size:22px}.ac-icon{width:52px;height:52px;font-size:25px}}
+
+/* 2026-09-19 final navigation visual refresh */
+header{gap:22px}
+header nav{display:flex;align-items:center;justify-content:center;gap:7px;padding:7px;border:1px solid #e3eaf3;border-radius:16px;background:linear-gradient(180deg,#ffffff 0%,#f7faff 100%);box-shadow:0 8px 24px rgba(25,55,95,.055)}
+header nav a,header nav button{position:relative;display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 13px;border:0;border-radius:11px;background:transparent;color:#18304b;font-size:13px;font-weight:800;white-space:nowrap;transition:background .18s ease,color .18s ease,transform .18s ease,box-shadow .18s ease}
+header nav a:hover,header nav button:hover{background:#eaf1ff;color:#2458d8;transform:translateY(-1px)}
+header nav a[href="#about"]:before{content:"●";font-size:8px;margin-right:7px;color:#5a7be7}
+header nav a[href="#programs"]:before{content:"◆";font-size:9px;margin-right:7px;color:#18a886}
+header nav a[href="#achievements"]:before{content:"★";font-size:11px;margin-right:7px;color:#d89a13}
+header nav a[href="#contact"]:before{content:"✦";font-size:11px;margin-right:7px;color:#6b5bd6}
+header nav #notice-open:before{content:"●";font-size:8px;margin-right:7px;color:#e66d3d}
+header nav a[data-channel="instagram"]:before{content:"◎";font-size:14px;margin-right:6px;color:#d34d8c}
+header nav a[data-channel="youtube"]:before{content:"▶";font-size:10px;margin-right:7px;color:#e04444}
+.contact-nav{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 22px;border-radius:14px;background:linear-gradient(135deg,#2458d8,#3568e4);box-shadow:0 10px 24px rgba(36,88,216,.22);font-weight:900;transition:transform .18s ease,box-shadow .18s ease}
+.contact-nav:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(36,88,216,.28)}
+.contact-nav span{display:grid;place-items:center;width:25px;height:25px;border-radius:50%;background:rgba(255,255,255,.16)}
+@media(max-width:1100px){header nav{gap:4px;padding:5px}header nav a,header nav button{padding:0 9px;font-size:12px}.contact-nav{padding:0 16px}}
+@media(max-width:900px){header nav{display:none}header nav.open{display:grid;padding:12px;gap:8px;border-radius:15px;background:#fff;box-shadow:0 16px 36px rgba(20,45,80,.14)}header nav.open a,header nav.open button{justify-content:flex-start;min-height:46px;padding:0 14px;background:#f7f9fc;border:1px solid #e8edf4}.contact-nav{display:none}}
+@media(max-width:480px){header nav.open{grid-template-columns:1fr 1fr}header nav.open a,header nav.open button{font-size:12px;padding:0 11px}}
