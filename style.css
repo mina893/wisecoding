@@ -39,7 +39,7 @@ footer .brand-logo{width:260px}footer .brand-location{font-size:13px}
 
 /* Interactive 3D humanoid */
 .hero-visual-3d{aspect-ratio:4/3;min-height:440px;overflow:visible}
-.robot-3d{display:block;width:100%;height:440px;background:transparent;--poster-color:transparent}
+.robot-3d{display:block;width:100%;height:440px;background:transparent;--poster-color:transparent;--progress-bar-height:0px;--progress-bar-color:transparent}
 .hero-visual-3d .image-note{text-align:center;color:#64758a;padding:6px 0 0}
 @media(max-width:720px){.hero-visual-3d{min-height:370px}.robot-3d{height:370px}}
 
@@ -88,3 +88,7 @@ img,model-viewer{max-width:100%}
   .section,.awards-strip{padding-left:16px;padding-right:16px}
   .phone-box>a{font-size:clamp(24px,8vw,30px)}
 }
+
+/* 2026-09-19: hide model-viewer loading progress line completely */
+.model-progress-hidden{display:none!important;width:0!important;height:0!important;overflow:hidden!important}
+.robot-3d::part(default-progress-bar),.robot-3d::part(default-progress-mask){display:none!important;height:0!important;opacity:0!important}
