@@ -1,0 +1,10 @@
+와이즈코딩 3D 태권전사 홈페이지 테스트 안내
+
+1. ZIP 파일을 먼저 압축 해제합니다.
+2. START_3D_TEST.bat 를 더블클릭합니다.
+3. 브라우저에서 http://localhost:8000/ 이 자동으로 열립니다.
+4. 검은 명령창은 테스트 중에는 닫지 마세요.
+
+주의: index.html을 직접 더블클릭(file://)하면 브라우저 보안 정책 때문에 GLB 3D 모델이 차단될 수 있습니다.
+
+GitHub Pages에서는 index.html, style.css, taekwondo_robot.glb가 같은 최상위 폴더에 있어야 합니다.

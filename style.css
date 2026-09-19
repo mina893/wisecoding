@@ -36,3 +36,13 @@ header .brand,footer .brand{display:flex;flex-direction:column;align-items:flex-
 .brand-location{display:block;align-self:flex-end;color:#455650;font-size:14px;font-weight:600;letter-spacing:1px;margin-right:10px}
 footer .brand-logo{width:260px}footer .brand-location{font-size:13px}
 @media(max-width:720px){header .brand-logo{width:clamp(190px,57vw,280px)}.brand-location{font-size:13px;letter-spacing:.6px;margin-right:6px}header{column-gap:10px}footer .brand-logo{width:260px}}
+
+/* Interactive 3D humanoid */
+.hero-visual-3d{aspect-ratio:4/3;min-height:440px;overflow:visible}
+.robot-3d{display:block;width:100%;height:440px;background:transparent;--poster-color:transparent}
+.hero-visual-3d .image-note{text-align:center;color:#64758a;padding:6px 0 0}
+@media(max-width:720px){.hero-visual-3d{min-height:370px}.robot-3d{height:370px}}
+
+.model-loading{display:flex;align-items:center;justify-content:center;width:100%;height:100%;font-weight:700;color:#2953cc;text-align:center}
+.model-status{text-align:center;color:#64758a;font-size:13px;padding-top:7px;min-height:28px}
+.model-status.ok{color:#455650}.model-status.error{color:#b42318;background:#fff4f2;border-radius:8px;padding:9px 12px}
