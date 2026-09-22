@@ -1,0 +1,18 @@
+네이버·구글 검색 노출 설정 안내
+
+1. 이 ZIP의 파일을 GitHub Pages 저장소 최상위(index.html이 있는 위치)에 업로드합니다.
+2. 기존 네이버 소유확인 파일 navera70a712971383e86a644f96cc05625ab.html은 삭제하지 마세요.
+3. 업로드 후 아래 주소가 열리는지 확인합니다.
+   https://wisecoding.kr/robots.txt
+   https://wisecoding.kr/sitemap.xml
+4. 네이버 서치어드바이저에서 사이트맵 주소 sitemap.xml 을 제출합니다.
+5. Google Search Console에서도 속성을 확인한 뒤 sitemap.xml 을 제출할 수 있습니다.
+
+적용 SEO
+- 검색 제목 및 설명 개선
+- canonical URL
+- robots index/follow
+- Open Graph 공유 정보
+- 교육기관 구조화 데이터(JSON-LD)
+- robots.txt
+- sitemap.xml
